@@ -5,8 +5,10 @@ Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.al
 Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 7.0.50~),
                gem2deb,
+               libjs-jquery,
                rake,
-               ruby-rspec
+               ruby-rspec (>= 3.0.0),
+               ruby-timecop
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rotp.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-rotp.git
@@ -17,8 +19,8 @@ XS-Ruby-Versions: all
 Package: ruby-rotp
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: A Ruby library for generating and verifying one time passwords
- Works for both HOTP and TOTP, and includes QR Code provisioning
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: Ruby library for generating and verifying one time passwords
+ A ruby library for generating one time passwords (HOTP & TOTP) according to
+ RFC 4226 and RFC 6238. Works for both HOTP and TOTP, and includes QR Code
+ provisioning.
