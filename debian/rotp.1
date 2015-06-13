@@ -1,0 +1,48 @@
+.TH rotp 1 "May 2015"
+.SH NAME
+.PP
+
+rotp \- Ruby library for generating and verifying one time passwords
+.SH SYNOPSIS
+rotp [options]
+.PP
+.SH DESCRIPTION
+.PP
+A Ruby library for generating and verifying one time passwords. It works for 
+both HOTP and TOTP, and includes QR Code provisioning
+.SH OPTIONS
+.TP
+.fi
+.B
+\-s, \-\-secret [SECRET]
+The shared secret
+.TP
+.fi
+.B
+\-c, \-\-counter [COUNTER]
+The counter for counter-based hmac OTP
+.TP
+.fi
+.B
+\-t, \-\-time
+Use time-based OTP according to RFC 6238 (default)
+.TP
+.fi
+.B
+\-m, \-\-hmac
+Use counter-based OTP according to RFC 4226
+.TP
+.fi
+.B
+\-h, \-\-help
+Show help
+
+.SH Examples
+.PP
+rotp \-\-secret p4ssword                       # Generates a time-based one-time password
+.PP
+rotp \-\-hmac \-\-secret p4ssword \-\-counter 42   # Generates a counter-based one-time password
+
+.SH SEE ALSO
+.PP
+/usr/share/doc/ruby-rotp/index.html

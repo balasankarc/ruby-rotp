@@ -1,0 +1,9 @@
+Document: ruby-rotp
+Title: rotp manual
+Author: Mark Percival <m@mdp.im>
+Abstract: Ruby library for generating and verifying one time passwords
+Section: Programming/Ruby
+
+Format: HTML
+Index: /usr/share/doc/ruby-rotp/_index.html
+Files: /usr/share/doc/ruby-rotp/*.html
