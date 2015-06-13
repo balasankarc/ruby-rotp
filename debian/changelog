@@ -1,0 +1,5 @@
+ruby-rotp (2.1.0+dfsg-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 13 Jun 2015 22:04:37 +0530
